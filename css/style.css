@@ -1,0 +1,63 @@
+:root {
+  font-size: 62.5%;
+}
+body {
+  background-color: black;
+}
+h1 {
+  font-size: 5rem;
+  color: rgb(182, 176, 176);
+  text-align: center;
+  margin-top: 10rem;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
+  height: 80vh;
+  margin: 3% auto;
+  border: groove 1rem rgba(80, 77, 77, 0.7);
+  padding: 2rem;
+}
+.box {
+  width: 20rem;
+  height: 20rem;
+  background-color: white;
+  border: groove 1rem rgb(89, 86, 86);
+  font-size: 1.8rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+.box-4 {
+  flex-basis: content;
+}
+div:nth-of-type(1),
+div:nth-of-type(5),
+div:nth-of-type(6) {
+  background-color: tomato;
+}
+.box-1,
+.box-5 {
+  flex-shrink: 2;
+}
+.box-6 {
+  flex-shrink: 4;
+}
+.mini-box {
+  width: 1.8rem;
+  height: 1.8rem;
+  box-sizing: border-box;
+  border: solid 1px black;
+}
+.box-7 div {
+  display: inline-block;
+  max-width: 20rem;
+}
+.box-2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
+}
